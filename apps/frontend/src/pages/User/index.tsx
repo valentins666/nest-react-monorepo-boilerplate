@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 
 import { IUser } from '@shared/types';
-import { UserService } from '@/services/service.user';
+import { UserService } from '@/services/service.user'
 
 const UserScreen = () => {
   const [newUserName, setNewUserName] = useState<string>('');
