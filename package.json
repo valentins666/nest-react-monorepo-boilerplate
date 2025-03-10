@@ -12,7 +12,7 @@
     "makemigrations": "knex --knexfile=apps/backend/src/database/knex.config.ts migrate:make --esm",
     "migrate": "ts-node node_modules/.bin/knex --knexfile=apps/backend/knex.config.ts migrate:latest --esm",
     "rollback": "ts-node node_modules/.bin/knex --knexfile=apps/backend/knex.config.ts migrate:rollback --esm",
-    "lint": "nx run-many --target=lint --all",
+    "lint": "nx run-many --all --target=lint --parallel --exclude=@nest-react-monorepo-demo/source",
     "format": "prettier --write .",
     "prepare": "husky install"
   },

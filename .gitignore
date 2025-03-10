@@ -46,3 +46,6 @@ vitest.config.*.timestamp*
 
 # Env files
 *.env
+
+#Cache files
+.eslintcache

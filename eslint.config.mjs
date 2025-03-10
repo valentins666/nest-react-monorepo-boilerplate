@@ -9,9 +9,12 @@ export default [
   eslintPrettierRecommended,
   {
     ignores: [
+      '**/node_modules',
       '**/dist',
       '**/vite.config.*.timestamp*',
       '**/vitest.config.*.timestamp*',
+      '**/*.config.mjs',
+      '**/*.config.js',
     ],
   },
   {

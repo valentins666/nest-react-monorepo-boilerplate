@@ -76,5 +76,13 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["lint"]
+      }
+    }
   }
 }
