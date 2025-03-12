@@ -46,6 +46,9 @@ vitest.config.*.timestamp*
 
 # Env files
 *.env
+*.env.*
+!*.env*.example
 
 #Cache files
 .eslintcache
+/scripts/.migration*
