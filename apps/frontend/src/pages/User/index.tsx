@@ -3,6 +3,8 @@ import { ChangeEvent, useEffect, useState } from 'react';
 import { IUser } from '@shared/types';
 import { UserService } from '@/services/service.user';
 
+import './styles.css';
+
 const UserScreen = () => {
   const [newUserName, setNewUserName] = useState<string>('');
   const [users, setUsers] = useState<IUser[]>([]);
@@ -36,19 +38,22 @@ const UserScreen = () => {
 
   return (
     <div className="page-container">
-      <input
-        className="user-input"
-        placeholder="New username"
-        value={newUserName}
-        onChange={handleInputChange}
-      />
-      <button
-        className="btn-add"
-        disabled={!newUserName}
-        onClick={handleAddUser}
-      >
-        Add User
-      </button>
+      <div className="flex self-right">
+        <input
+          className="user-input"
+          placeholder="New username"
+          value={newUserName}
+          onChange={handleInputChange}
+        />
+        <button
+          className="btn-add"
+          disabled={!newUserName}
+          onClick={handleAddUser}
+        >
+          Add User
+        </button>
+      </div>
+
       <div className="title">Current Users</div>
       <div className="table">
         <div className="row header">
