@@ -8,7 +8,7 @@ import knexConfig from '../../knex.config';
 @Module({
   imports: [
     KnexModule.forRoot({
-      config: knexConfig.development, // Adjust if necessary
+      config: knexConfig, // Adjust if necessary
     }),
     UsersModule,
   ],
